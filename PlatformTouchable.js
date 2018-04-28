@@ -4,6 +4,7 @@ import {
   TouchableNativeFeedback,
   TouchableOpacity,
   TouchableWithoutFeedback,
+  TouchableHighlight,
   View,
 } from 'react-native';
 
@@ -13,7 +14,7 @@ if (Platform.OS === 'android') {
   TouchableComponent =
     Platform.Version <= 20 ? TouchableOpacity : TouchableNativeFeedback;
 } else {
-  TouchableComponent = TouchableOpacity;
+  TouchableComponent = TouchableHighlight;
 }
 
 if (TouchableComponent !== TouchableNativeFeedback) {
