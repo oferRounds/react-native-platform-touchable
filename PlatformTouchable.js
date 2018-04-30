@@ -8,6 +8,7 @@ import {
   View,
 } from 'react-native';
 
+
 let TouchableComponent;
 
 if (Platform.OS === 'android') {
